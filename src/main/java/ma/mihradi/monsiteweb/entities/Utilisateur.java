@@ -16,7 +16,7 @@ import javax.persistence.Id;
 @AllArgsConstructor
 public class Utilisateur {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int id;
+    private Integer id;
     private String nomUtilisateur;
     private String motDePasse;
     private String nom;
