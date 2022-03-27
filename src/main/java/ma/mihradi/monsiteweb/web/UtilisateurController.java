@@ -21,4 +21,11 @@ public class UtilisateurController {
         return "home";
     }
 
+    @GetMapping(path = "/delete")
+    public  String delete(int id){
+        utilisateurRepository.deleteById(id);
+
+        return "redirect:/";
+    }
+
 }
